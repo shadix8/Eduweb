@@ -1,0 +1,45 @@
+.w-100
+{
+   width: 75%;
+
+}
+.books
+{
+   background-color: lightgray;
+}
+
+
+* {
+   box-sizing: border-box;
+ }
+ 
+ .column {
+   float: left;
+   width: 25%;
+   padding: 2px;
+   color: lightgray;
+   
+ }
+ .column-1{
+   float: left;
+   width: 100%;
+   margin: 5px;
+   padding: 50px;
+   
+ }
+ 
+ /* Clearfix (clear floats) */
+ .row::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+ 
+ /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 500px) {
+   .column {
+     width: 100%;
+     padding-left: 20%;
+   }
+ }
+ 
